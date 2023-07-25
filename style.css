@@ -1,0 +1,128 @@
+:root{
+    --bcg-color: #001122;
+    --primary-color: #155e75;
+    --border-radius: 8px;
+    --secondary-color: #fff;
+    --border-color: #7fb7c9;
+    --font-family-typewriter: 'Roboto Mono', monospace;
+}
+*{
+    
+    font-family: var(--font-family-typewriter);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: var(--font-family-typewriter);
+    background-image: url("pic.jpg");
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+.box{
+    font-family: var(--font-family-typewriter);
+    background-color: transparent;
+    padding: 30px;
+    width: 400px;
+}
+
+.qr-header h1{
+    font-family: var(--font-family-typewriter);
+    font-size: 26px;
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.qr-header input{
+    font-family: var(--font-family-typewriter);
+    width: 100%;
+    margin-block: 12px;
+}
+
+.qr-header input, select{
+    font-family: var(--font-family-typewriter);
+    padding: 8px;
+    border-radius: var(--border-radius);
+    font-size: 18px;
+    outline: none;
+    border: 2px solid var(--border-color);
+}
+
+.qr-header label{
+    font-family: var(--font-family-typewriter);
+    color: var(--secondary-color);
+    font-size: 15px;
+}
+
+.qr-header div{
+    font-family: var(--font-family-typewriter);
+    display: flex;
+    justify-content: space-between;
+}
+
+.qr-footer{
+    font-family: var(--font-family-typewriter);
+    display: flex;
+    justify-content: center;
+}
+.qr-footer a{
+    font-family: var(--font-family-typewriter);
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 14px 36px;
+    margin-inline: 2px;
+    color: #012169;
+    font-weight: 600;
+    border-radius: var(--border-radius);
+}
+
+.qr-body{
+    font-family: var(--font-family-typewriter);
+    display: grid;
+    place-items: center;
+    padding:20px;
+}
+
+.qr-body img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-block: 10px;
+    padding: 20px;
+    border: 0.5px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+.bottom {
+    font-family: var(--font-family-typewriter);
+    text-align: center;
+}
+.bottom a{
+    font-family: var(--font-family-typewriter);
+    font-size: 12px;
+    color: white; 
+    text-decoration: none; 
+  }
+.bottom a:visited {
+    font-family: var(--font-family-typewriter);
+    color: white ;
+  }
+@media screen and (max-width:520px){
+    .box{
+        width: 80%;
+    }
+    .qr-footer a{
+        padding: 12px;
+        font-size: 16px;
+    }
+}
